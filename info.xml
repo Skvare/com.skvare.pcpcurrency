@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<extension key="com.skvare.pcpcustom" type="module">
+<extension key="com.skvare.pcpcurrency" type="module">
   <file>pcpcurrency</file>
   <name>PCP Currency</name>
   <description>Patch to make PCP Pages respect Contribution Page Currency Settings</description>
