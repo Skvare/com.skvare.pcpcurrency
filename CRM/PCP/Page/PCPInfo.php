@@ -73,7 +73,7 @@ class CRM_PCP_Page_PCPInfo extends CRM_Core_Page {
       );
     }
 
-    $pageCurrency = civicrm_api3('ContributionPage', 'getvalue', array('sequential' => 1,'return' => "currency",'id' => 6));
+    $pageCurrency = civicrm_api3('ContributionPage', 'getvalue', array('sequential' => 1,'return' => "currency",'id' => $pcpInfo['page_id']));
     $pcpInfo['currency'] = $pageCurrency;
     CRM_Utils_System::setTitle($pcpInfo['title']);
     $this->assign('pcp', $pcpInfo);
